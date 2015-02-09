@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		64AFD5071A88F0E3005F7B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AFD5061A88F0E3005F7B32 /* AppDelegate.swift */; };
 		64AFD5091A88F0E3005F7B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AFD5081A88F0E3005F7B32 /* ViewController.swift */; };
-		64AFD50C1A88F0E3005F7B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64AFD50A1A88F0E3005F7B32 /* Main.storyboard */; };
 		64AFD50E1A88F0E3005F7B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AFD50D1A88F0E3005F7B32 /* Images.xcassets */; };
-		64AFD5111A88F0E3005F7B32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64AFD50F1A88F0E3005F7B32 /* LaunchScreen.xib */; };
 		64AFD51D1A88F0E3005F7B32 /* SlidingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AFD51C1A88F0E3005F7B32 /* SlidingViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +28,7 @@
 		64AFD5051A88F0E3005F7B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64AFD5061A88F0E3005F7B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64AFD5081A88F0E3005F7B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64AFD50B1A88F0E3005F7B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64AFD50D1A88F0E3005F7B32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		64AFD5101A88F0E3005F7B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		64AFD5161A88F0E3005F7B32 /* SlidingViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlidingViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AFD51B1A88F0E3005F7B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64AFD51C1A88F0E3005F7B32 /* SlidingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingViewControllerTests.swift; sourceTree = "<group>"; };
@@ -79,9 +75,7 @@
 			children = (
 				64AFD5061A88F0E3005F7B32 /* AppDelegate.swift */,
 				64AFD5081A88F0E3005F7B32 /* ViewController.swift */,
-				64AFD50A1A88F0E3005F7B32 /* Main.storyboard */,
 				64AFD50D1A88F0E3005F7B32 /* Images.xcassets */,
-				64AFD50F1A88F0E3005F7B32 /* LaunchScreen.xib */,
 				64AFD5041A88F0E3005F7B32 /* Supporting Files */,
 			);
 			path = SlidingViewController;
@@ -192,8 +186,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64AFD50C1A88F0E3005F7B32 /* Main.storyboard in Resources */,
-				64AFD5111A88F0E3005F7B32 /* LaunchScreen.xib in Resources */,
 				64AFD50E1A88F0E3005F7B32 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,25 +226,6 @@
 			targetProxy = 64AFD5171A88F0E3005F7B32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		64AFD50A1A88F0E3005F7B32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64AFD50B1A88F0E3005F7B32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		64AFD50F1A88F0E3005F7B32 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64AFD5101A88F0E3005F7B32 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		64AFD51E1A88F0E3005F7B32 /* Debug */ = {
@@ -338,7 +311,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SlidingViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +323,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SlidingViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
